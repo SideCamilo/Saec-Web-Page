@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "practica1.css" rel = "stylesheet">
+	<link rel="shortcut icon" href="imagenes/logo2015.png">
+	
+	<title>Contacto SAEC</title>
+	
+		<!-- Estilos CSS -->
+	<link rel="stylesheet" type="text/css" href="css/stlymenu.css">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	<script Language=Javascript SRC="js/jsMapa.js"></script>
+	<script Language=Javascript SRC="js/jsMensaje.html"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="titulogo"  style = "text-decoration: none" href="#"><img src ="imagenes/logo2015.png">SAEC</img></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div class = "container">
+        <div class="row">
+			<div class="col-md-12">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div></br></br>
+	
+	<div class = "container">
+        <div class="row">
+			<div class="col-md-3">
+				<div class = "Caption">
+					<p class = "titulo">PARA CONTACTARNOS</p>
+					<form action="php/phpmensajes.php" method="post" role="form">
+						<div class="form-group">
+							<label class = "texto">Nombre</label>
+							<input type="text" class="form-control" name="nombre" placeholder="Introduce tu nombre">
+						</div>
+												
+						<div class="form-group">
+							<label class = "texto"> Tel&eacutefono </label>
+							<input type="text" class="form-control" name="telefono" placeholder="Introduce tu numero">
+						</div>
+						
+						<div class="form-group">
+							<label class = "texto">Correo electr&oacutenico </label>
+							<input type="e-mail" class="form-control" name="correo" placeholder="Introduce tu E-mail">
+						</div>
+						
+						<div class = "form group">
+							<label class = "texto">Introduce tu mensaje</label>
+							<textarea class="form-control" name="texto" rows="3" placeholder = "Escribe tu mensaje aqu&iacute"></textarea>
+						</div></br>
+						
+						<button type="submit" class="btn btn-default">Enviar</button>
+					</form>
+				</div>
+			</div>
+			<div class = "col-md-9">
+				<div class = "caption">
+					<div class ="texto">Servicios de Arquitectura, Estructuras<br /> 
+					y Construcci&#243n S.A. de C.V.<br /><br />
+					Av. Hacienda de Ojocaliente<br /> 
+					No. 127-B. Fracc. Haciendas de<br />
+					Aguascalientes<br />
+					Tel. (449)145-07-11 y<br />
+					(449)145-23-99<br />
+					Aguascalientes, Ags. C.P. 20196<br /><br />
+					RFC SAE-090219 7Q8<br /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></br></br></br>
+	
+	 
+		
+					
+		  
+<!--=========Footer=========================-->
+    <div class="container" style = "background:url('Imagenes/footer.jpg'); background-size: cover;">
+		<div class = "row">
+			<div class="col-md-3 border-right-2">
+				<div class = "caption">
+					<dl class="adrss">
+						<p><strong><dd><span>Telefono1:</span>(449)-145-0711</dd>
+						<dd><span>Telefono2:</span>(449) 145-2399</dd>
+						<dd><span>E-mail:</span><a href="saec@saec.mx" class="link"></p>saec@saec.mx</a></dd>
+					</dl> 
+					<p>Av. Haciendas de Ojocaliente 123-B Fracc. Hdas de Aguascalientes. CP 20196. Aguascalientes, Ags.</strong></p>
+				</div>
+			</div>
+			<div class = "col-md-9">
+				<div class="soc-icons">
+					<a href="https://www.facebook.com/arquitecturayestructuras"><img src="Imagenes/icon-2.png" alt=""></a>
+					<a href="https://twitter.com/S_A_E_C"><img src="Imagenes/icon-3.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Fin Footer -->
+	
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
